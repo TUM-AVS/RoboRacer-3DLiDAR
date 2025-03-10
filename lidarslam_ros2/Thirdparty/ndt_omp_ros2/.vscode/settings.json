@@ -1,0 +1,10 @@
+{
+    "python.autoComplete.extraPaths": [
+        "/home/sasaki/ros2_ws/install/raspimouse_ros2_examples/lib/python3.8/site-packages",
+        "/home/sasaki/ros2_ws/install/raspimouse_msgs/lib/python3.8/site-packages",
+        "/home/sasaki/ros2_ws/install/lidarslam_msgs/lib/python3.8/site-packages",
+        "/opt/ros/foxy/lib/python3.8/site-packages",
+        "/home/sasaki/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
+    ]
+}

@@ -1,4 +1,10 @@
 # 3D LiDAR SLAM and Localization on F1TENTH
+
+<p align="center">
+  <img src="Livox_F1Tenth_Live.JPG" width="480">
+</p>
+
+
 This repository provides the necessary drivers to operate the F1Tenth/RoboRacer cars equipped with the Livox MID-360 3D LiDAR sensor ([Livox MID-360 product page](https://www.livoxtech.com/de/mid-360)). Additionally, we include a robust and tested 3D LiDAR SLAM package specifically validated for use with this LiDAR.
 
 The provided setup is designed not to interfere with your existing workspace. This means switching between the original 2D sensor and the new 3D sensor is as easy as modifying your launch command.
@@ -8,16 +14,15 @@ The following instructions where tested and verifies on the following hard- and 
 - Jetson Orin Nano 8GB Development Kit
 - Jetpack 5.1.2
 
-**Upcoming:**
-- We plan to release a small test dataset from the Livox LiDAR sensor in May 2025, allowing teams to evaluate performance prior to receiving their sensors.
+You can find videos demonstrating the raw LiDAR data as well as 3D SLAM performance, as well as 3 rosbags via the following link: [TUM SyncAndShare](https://syncandshare.lrz.de/getlink/fiCk878yuz8FvFnavZWunU/Livox_LiDAR)
 
 ## Setup
 1. 3D print the Livox mounting plate: [STL File](https://github.com/TUM-AVS/F1TENTH-Auxiliaries/tree/main/F1TENTH%20-%20CAD%20Files/Livox%20MID-360%20Adapter%20Plate).
-2. Attach the LiDAR to the platform, using the screws included in the MID-360 package.
-3. Press 4 M3 Hex Nuts into the respective places on the platform.
-4. Use 4 M3x16mm screw to mount the platform and the LiDAR on the F1Tenth platform.
-5. Attach the power connectors of the LiDAR to the powerboard and the Ethernet cable to the Jetson. Take special attention to the polarity of the cables and your specific powerboard.
-6. Note down the IP-adress of your Livox LiDAR: "192.168.1.1XX". Replace XX with the last two numbers of the LiDAR Serial Number, which can be found on a QR Code sticker on the back of the device.
+2. Attach the LiDAR to the plate, using the screws included in the MID-360 package.
+3. Press 4 M3 DIN 934 Hex Nuts into the respective places on the plate.
+4. Use 4 M3x16mm (e.g., DIN 912 or ISO 4762) screws to mount the plate and the LiDAR on the F1Tenth platform.
+5. Attach the power connectors of the LiDAR to the powerboard and the Ethernet cable to the Jetson. Take special attention to the polarity of the cables and your specific powerboard. Please thoroughly evaluate if you can use the LiDAR with your powerboard before first use.  
+6. Note down the IP-adress of your Livox LiDAR: "192.168.1.1XX". Replace XX with the last two numbers of the LiDAR Serial Number, which can be found on a QR Code sticker on the back of the device (see "Livox_SerialNumber.jpeg").
 
 ## Installation - Livox Driver
 
@@ -25,7 +30,7 @@ The following instructions where tested and verifies on the following hard- and 
 ```
 mkdir -p ~/f1tenth_ws_3dlidar/src
 cd ~/f1tenth_ws_3dlidar/src
-git clone https://github.com/TUM-AVS/F1TENTH-Auxiliaries.git
+git clone https://github.com/TUM-AVS/RoboRacer-3DLiDAR.git
 ```
 2. Run `./install.sh` from this directory. 
 3. Activate the new "Livox" network profile.
@@ -103,7 +108,7 @@ Please add '/usr/local/lib' to the env LD_LIBRARY_PATH.
 
 ## Acknowledgements
 
-The TUM F1Tenth project is lead by Felix Jahncke ([Website](https://www.mos.ed.tum.de/en/avs/team/felix-jahncke/)).
+The TUM F1Tenth/RoboRacer project is lead by Felix Jahncke ([Website](https://www.mos.ed.tum.de/en/avs/team/felix-jahncke/)) at the Professorship of Autonomous Vehicle Systems under the supervision of Professor Johannes Betz ([Website](https://www.mos.ed.tum.de/en/avs/team/prof-dr-ing-johannes-betz/)).
 
-We thank Moritz Wagner, Ahmad Amine ([Website](https://ahmadamine998.github.io/)), and Rahul Mangharam ([Website](https://www.seas.upenn.edu/~rahulm/)) for their contributions.
+We thank Moritz Wagner and Ahmad Amine ([Website](https://ahmadamine998.github.io/)) for their contributions.
 

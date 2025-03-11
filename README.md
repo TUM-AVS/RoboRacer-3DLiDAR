@@ -60,10 +60,6 @@ cd ~/f1tenth_ws
 source install/setup.bash
 ros2 launch f1tenth_stack bringup_launch_mid360.py
 ```
-## Installation - 3D LiDAR SLAM
-
-Please install the **ROS2 3D LiDAR SLAM** ROS package according to the instructions inside the **lidarslam_ros2** folder.
-
 
 ## Running the Code - 3D LiDAR SLAM
 **Note: To transfer maps between Mapping and Localization, the car must start in the same position for when the respective nodes are launched. Depending on the environment, there may be some room for error in initial positioning.**

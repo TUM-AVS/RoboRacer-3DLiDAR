@@ -1,12 +1,12 @@
 # 3D LiDAR SLAM and Localization on F1TENTH
 
 <p align="center">
-  <table>
+  <table border="0" style="border-collapse: collapse;">
     <tr>
-      <td><img src="Livox_F1Tenth_Live.JPG" width="480"></td>
-      <td>
-        <img src="F1Tenth_3DLiDAR_Demo_Rennstrecke_GIF.gif" width="300">
-        <img src="F1Tenth_3DLiDAR_Demo_Empore_GIF.gif" width="300"><br>
+      <td style="border: none;"><img src="Livox_F1Tenth_Live.JPG" width="338"></td>
+      <td align="center" style="border: none;">
+        <img src="F1Tenth_3DLiDAR_Demo_Rennstrecke_GIF.gif" width="300"><br>
+        <img src="F1Tenth_3DLiDAR_Demo_Empore_GIF.gif" width="300">
       </td>
     </tr>
   </table>

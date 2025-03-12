@@ -28,7 +28,7 @@ You can find videos demonstrating the raw LiDAR data as well as 3D SLAM performa
 1. 3D print the Livox mounting plate: [STL File](https://github.com/TUM-AVS/F1TENTH-Auxiliaries/tree/main/F1TENTH%20-%20CAD%20Files/Livox%20MID-360%20Adapter%20Plate).
 2. Attach the LiDAR to the plate, using the screws included in the MID-360 package.
 3. Press 4 M3 DIN 934 Hex Nuts into the respective places on the plate.
-4. Use 4 M3x16mm (e.g., DIN 912 or ISO 4762) screws to mount the plate and the LiDAR on the F1Tenth platform.
+4. Use 4 M3x16mm (e.g., DIN 912 or ISO 4762) screws to mount the plate and the LiDAR on the F1Tenth platform (platform width 10mm). Adapt the length of the screws if you're platform is of a different width/thickness.
 5. Attach the power connectors of the LiDAR to the powerboard and the Ethernet cable to the Jetson. Take special attention to the polarity of the cables and your specific powerboard. Please thoroughly evaluate if you can use the LiDAR with your powerboard before first use.  
 6. Note down the IP-adress of your Livox LiDAR: "192.168.1.1XX". Replace XX with the last two numbers of the LiDAR Serial Number, which can be found on a QR Code sticker on the back of the device (see "Livox_SerialNumber.jpeg").
 
@@ -116,3 +116,17 @@ The TUM F1Tenth/RoboRacer project is lead by Felix Jahncke ([Website](https://ww
 
 We thank Moritz Wagner ([moritz.s.wagner@tum.de](mailto:moritz.s.wagner@tum.de)) and Ahmad Amine ([Website](https://ahmadamine998.github.io/)) for their contributions.
 
+## Citing
+
+If you find our RoboRacer/F1Tenth software useful, please consider citing:
+```
+@ARTICLE{
+  author={Betz, Johannes and Zheng, Hongrui and Jahncke, Felix and Zang, Zirui and Sauerbeck, Florian and Zheng, Y. Rosa and Biswas, Joydeep and Krovi, Venkat and Mangharam, Rahul},
+  journal={IEEE Transactions on Intelligent Vehicles}, 
+  title={F1TENTH: Enhancing Autonomous Systems Education Through Hands-On Learning and Competition}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-13},
+  doi={10.1109/TIV.2024.3495227}}
+```

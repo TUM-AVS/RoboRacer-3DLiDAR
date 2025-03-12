@@ -106,5 +106,5 @@ Please add '/usr/local/lib' to the env LD_LIBRARY_PATH.
 
 The TUM F1Tenth/RoboRacer project is lead by Felix Jahncke ([Website](https://www.mos.ed.tum.de/en/avs/team/felix-jahncke/)) at the Professorship of Autonomous Vehicle Systems under the supervision of Professor Johannes Betz ([Website](https://www.mos.ed.tum.de/en/avs/team/prof-dr-ing-johannes-betz/)).
 
-We thank Moritz Wagner and Ahmad Amine ([Website](https://ahmadamine998.github.io/)) for their contributions.
+We thank Moritz Wagner ([moritz.s.wagner@tum.de](mailto:moritz.s.wagner@tum.de)) and Ahmad Amine ([Website](https://ahmadamine998.github.io/)) for their contributions.
 

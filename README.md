@@ -21,6 +21,7 @@ The following instructions where tested and verifies on the following hard- and 
 
 - Jetson Orin Nano 8GB Development Kit
 - Jetpack 5.1.2
+- ROS2 Foxy
 
 You can find videos demonstrating the raw LiDAR data as well as 3D SLAM performance, as well as 3 rosbags via the following link: [TUM SyncAndShare](https://syncandshare.lrz.de/getlink/fiCk878yuz8FvFnavZWunU/Livox_LiDAR)
 

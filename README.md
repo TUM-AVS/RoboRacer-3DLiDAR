@@ -30,7 +30,8 @@ You can find videos demonstrating the raw LiDAR data as well as 3D SLAM performa
 3. Press 4 M3 DIN 934 Hex Nuts into the respective places on the plate.
 4. Use 4 M3x16mm (e.g., DIN 912 or ISO 4762) screws to mount the plate and the LiDAR on the F1Tenth platform (platform width 10mm). Adapt the length of the screws if you're platform is of a different width/thickness.
 5. Attach the power connectors of the LiDAR to the powerboard and the Ethernet cable to the Jetson. Take special attention to the polarity of the cables and your specific powerboard. Please thoroughly evaluate if you can use the LiDAR with your powerboard before first use.  
-6. Note down the IP-adress of your Livox LiDAR: "192.168.1.1XX". Replace XX with the last two numbers of the LiDAR Serial Number, which can be found on a QR Code sticker on the back of the device (see "Livox_SerialNumber.jpeg").
+6. We recommend to raise the Jetson on your platform to accommodate for the Livox cable under it. We use 45mm standoffs for this task.
+7. Note down the IP-adress of your Livox LiDAR: "192.168.1.1XX". Replace XX with the last two numbers of the LiDAR Serial Number, which can be found on a QR Code sticker on the back of the device (see "Livox_SerialNumber.jpeg").
 
 ## Installation - Livox Driver
 
@@ -94,6 +95,12 @@ Config files are available in `lidarslam_ros2/lidarslam/param/lidarslam.yaml` fo
 
 ## Common Errors
 From the [livox_ros_driver2](https://github.com/Livox-SDK/livox_ros_driver2/tree/master):
+### No point cloud display in RViz?
+
+Please check the "Global Options - Fixed Frame" field in the RViz "Display" pannel. Set the field value to "livox_frame" and check the "PointCloud2" option in the pannel.
+
+### Error with cannot open shared object file "liblivox_sdk_shared.so" ?
+
 Please add '/usr/local/lib' to the env LD_LIBRARY_PATH.
 
 * If you want to add to current terminal:

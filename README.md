@@ -3,10 +3,10 @@
 <p align="center">
   <table border="0" style="border-collapse: collapse;">
     <tr>
-      <td style="border: none;"><img src="Livox_F1Tenth_Live.JPG" width="338"></td>
+      <td style="border: none;"><img src="Images/Livox_F1Tenth_Live.JPG" width="338"></td>
       <td align="center" style="border: none;">
-        <img src="F1Tenth_3DLiDAR_Demo_Rennstrecke_GIF.gif" width="300"><br>
-        <img src="F1Tenth_3DLiDAR_Demo_Empore_GIF.gif" width="300">
+        <img src="Images/F1Tenth_3DLiDAR_Demo_Rennstrecke_GIF.gif" width="300"><br>
+        <img src="Images/F1Tenth_3DLiDAR_Demo_Empore_GIF.gif" width="300">
       </td>
     </tr>
   </table>
@@ -32,7 +32,7 @@ You can find videos demonstrating the raw LiDAR data as well as 3D SLAM performa
 4. Use 4 M3x16mm (e.g., DIN 912 or ISO 4762) screws to mount the plate and the LiDAR on the F1Tenth platform (platform width 10mm). Adapt the length of the screws if you're platform is of a different width/thickness.
 5. Attach the power connectors of the LiDAR to the powerboard and the Ethernet cable to the Jetson. Take special attention to the polarity of the cables and your specific powerboard. Please thoroughly evaluate if you can use the LiDAR with your powerboard before first use.  
 6. We recommend to raise the Jetson on your platform to accommodate for the Livox cable under it. We use 45mm standoffs for this task.
-7. Note down the IP-adress of your Livox LiDAR: "192.168.1.1XX". Replace XX with the last two numbers of the LiDAR Serial Number, which can be found on a QR Code sticker on the back of the device (see "Livox_SerialNumber.jpeg").
+7. Note down the IP-adress of your Livox LiDAR: "192.168.1.1XX". Replace XX with the last two numbers of the LiDAR Serial Number, which can be found on a QR Code sticker on the back of the device (see "Images/Livox_SerialNumber.jpeg").
 
 ## Installation - Livox Driver
 
